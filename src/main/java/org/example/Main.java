@@ -5,28 +5,44 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Podaj ile samochodow tworzysz");
-        int ilosc = scanner.nextInt();
-        scanner.nextLine();
 
-        Samochod[]tablica=new Samochod[ilosc];
+        Tancerz tancerz1 = new Tancerz("Wiki", "Poland");
+        Tancerz tancerz2 = new Tancerz("Wiki", "Poland", 18);
+        Tancerz tancerz3 = new Tancerz("Wiki", "Poland", 18, "ludowe", 5);
+        Tancerz[] tablica = new Tancerz[3];
+        tablica[0] = tancerz1;
+        tablica[1] = tancerz2;
+        tablica[2] = tancerz3;
         for (int i = 0; i < tablica.length; ++i) {
-            System.out.println("Podaj marke");
-            String marka = scanner.nextLine();
-
-            System.out.println("Podaj ceny");
-           Double ceny = scanner.nextDouble();
-           scanner.nextLine();
-
-
-            tablica[i] = new Samochod(marka,ceny);
-
+            System.out.println(tablica[i].opisTancerza());
+            }
         }
-        for (int i = 0; i < tablica.length; ++i) {
+    }
 
-            System.out.println(tablica[i].getMarka()+" " + tablica[i].getCena());
-        }
+
+
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Podaj ile samochodow tworzysz");
+//        int ilosc = scanner.nextInt();
+//        scanner.nextLine();
+//
+//        Samochod[]tablica=new Samochod[ilosc];
+//        for (int i = 0; i < tablica.length; ++i) {
+//            System.out.println("Podaj marke");
+//            String marka = scanner.nextLine();
+//
+//            System.out.println("Podaj ceny");
+//           Double ceny = scanner.nextDouble();
+//           scanner.nextLine();
+//
+//
+//            tablica[i] = new Samochod(marka,ceny);
+//
+//        }
+//        for (int i = 0; i < tablica.length; ++i) {
+//
+//            System.out.println(tablica[i].getMarka()+" " + tablica[i].getCena());
+//        }
 
 //        Telefon telefon1 = new Telefon("Apple","13",2000);
 //       Telefon telefon2 = new Telefon("Apple","14");
@@ -51,8 +67,8 @@ public class Main {
 //       System.out.println(x);
 
 
-    }
-}
+
+
 
 
 
