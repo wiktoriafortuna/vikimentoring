@@ -66,9 +66,7 @@ public class Tancerz {
     public String opisTancerza() {
         return "Tancerz :" + this.imie + " Kraj: " + this.kraj + " Wiek: " + this.wiek + " Styl: " + this.stylTanca + " " +
                 "Ocena: " + this.ocena;
-        if( stylTanca=null){
-            System.out.println(" ");
-        }
+
 
 
     }
