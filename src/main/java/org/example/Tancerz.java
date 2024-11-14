@@ -64,10 +64,6 @@ public class Tancerz {
         this.ocena = ocena;
     }
     public String opisTancerza() {
-        return "Tancerz :" + this.imie + " Kraj: " + this.kraj + " Wiek: " + this.wiek + " Styl: " + this.stylTanca + " " +
-                "Ocena: " + this.ocena;
-
-
-
+        return "Tancerz :" + this.imie + " Kraj: " + this.kraj + " Wiek: " + this.wiek + " Styl: " + this.stylTanca + " " + "Ocena: " + this.ocena;
     }
 }
