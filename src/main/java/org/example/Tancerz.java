@@ -63,7 +63,11 @@ public class Tancerz {
     public void setOcena(double ocena) {
         this.ocena = ocena;
     }
+
     public String opisTancerza() {
-        return "Tancerz :" + this.imie + " Kraj: " + this.kraj + " Wiek: " + this.wiek + " Styl: " + this.stylTanca + " " + "Ocena: " + this.ocena;
+        if(stylTanca == null){
+            return "Tancerz: " + this.imie + " Kraj: " + this.kraj + " Wiek: " + this.wiek + " " + "Ocena: " + this.ocena;
+        }
+        return "Tancerz: " + this.imie + " Kraj: " + this.kraj + " Wiek: " + this.wiek + " Styl: " + this.stylTanca + " " + "Ocena: " + this.ocena;
     }
 }

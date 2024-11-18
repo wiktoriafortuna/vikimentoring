@@ -1,24 +1,58 @@
 package org.example;
 
-import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Tancerz tancerz1 = new Tancerz("Wiki", "Poland");
-        Tancerz tancerz2 = new Tancerz("Wiki", "Poland", 18);
-        Tancerz tancerz3 = new Tancerz("Wiki", "Poland", 18, "ludowe", 5);
-        Tancerz[] tablica = new Tancerz[3];
-        tablica[0] = tancerz1;
-        tablica[1] = tancerz2;
-        tablica[2] = tancerz3;
-        for (int i = 0; i < tablica.length; ++i) {
-            System.out.println(tablica[i].opisTancerza());
-            }
-        }
-    }
+        Tancerz tancerz1 = new Tancerz("CWiki", "Poland");
+        Tancerz tancerz2 = new Tancerz("ABartek", "Poland", 18);
+        Tancerz tancerz3 = new Tancerz("BKrysia", "Poland", 18, "ludowe", 5);
 
+//        Tancerz[] tablica = new Tancerz[3];
+
+        List<Tancerz> kolekcja = new ArrayList<>();
+
+//        tablica[0] = tancerz1;
+//        tablica[1] = tancerz2;
+//        tablica[2] = tancerz3;
+
+//        kolekcja.get(1);
+
+        kolekcja.add(tancerz1);
+        kolekcja.add(tancerz2);
+        kolekcja.add(tancerz3);
+
+        kolekcja.remove(tancerz2);
+
+//        for (int i = 0; i < tablica.length; ++i) {
+//            System.out.println(tablica[0].opisTancerza());
+//        }
+
+        boolean contains = kolekcja.contains(tancerz2);
+        System.out.println(contains);
+
+        System.out.println("Pierwsze wyswietlenie tancerzy");
+        for(Tancerz i: kolekcja) {
+            System.out.println(i.opisTancerza());
+        }
+
+//        kolekcja.
+
+//        kolekcja.remove(tancerz2);
+//
+//        System.out.println("Drugie wyswietlenie tancerzy");
+//        for(Tancerz i: kolekcja) {
+//            System.out.println(i.opisTancerza());
+//        }
+
+
+
+    }
+}
 
 
 //        Scanner scanner = new Scanner(System.in);
