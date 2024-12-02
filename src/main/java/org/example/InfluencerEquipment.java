@@ -4,14 +4,14 @@ import java.util.List;
 
 public class InfluencerEquipment {
     private List<Dom> domy;
-    private Samochod samochod;
+    private List <Samochod> samochody;
     public List<Telefon> kolekcja;
     public InstagramKonto instagramKonto;
     public int wiek;
 
-    InfluencerEquipment(List<Dom> domy, Samochod samochod, List<Telefon> kolekcja, InstagramKonto instagramKonto, int wiek) {
+    InfluencerEquipment(List<Dom> domy, List<Samochod> samochody, List<Telefon> kolekcja, InstagramKonto instagramKonto, int wiek) {
         this.domy = domy;
-        this.samochod = samochod;
+        this.samochody = samochody;
         this.kolekcja = kolekcja;
         this.instagramKonto = instagramKonto;
         this.wiek= wiek;
@@ -26,12 +26,12 @@ public class InfluencerEquipment {
     }
 
 
-    public Samochod getSamochod() {
-        return samochod;
+    public List <Samochod> getSamochody() {
+        return samochody;
     }
 
-    public void setSamochod(Samochod samochod) {
-        this.samochod = samochod;
+    public void setSamochody(List <Samochod>samochody) {
+        this.samochody = samochody;
     }
 
     public List<Telefon> getKolekcja() {
@@ -59,8 +59,12 @@ public class InfluencerEquipment {
                 domy.get(0).getPowierzchnia() + "\n" +
                 domy.get(1).getPowierzchnia() + "\n" +
                 domy.get(2).getPowierzchnia() + "\n" +
-                " Posida samochod marki: " + samochod.getMarka() + "\n" +
-                " Cena go: " + samochod.getCena() + "\n" +
+                " Posida samochod marki: " +  "\n"+
+                samochody.get(0).getMarka() + "\n" +
+                samochody.get(1).getMarka() + "\n" +
+                " Ceny samochodow: " + "\n"+
+                samochody.get(0).getCena() + "\n" +
+                samochody.get(1).getCena() + "\n" +
                 " Telefon modelu: " + "\n" +
                 kolekcja.get(0).getModel() + "\n" +
                 kolekcja.get(1).getModel() + "\n" +

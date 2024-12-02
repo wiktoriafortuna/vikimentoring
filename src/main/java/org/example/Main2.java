@@ -10,10 +10,13 @@ public class Main2 {
         Dom dom1 = new Dom("Hiszpania", 30000, 2);
         Dom dom2 = new Dom("Poznan", 2000, 8);
         Samochod samochod = new Samochod("bmw", 1000000);
+        Samochod samochod1 = new Samochod("Toyota", 120000);
         Telefon telefon1= new Telefon("Apple", 20000);
         Telefon telefon2= new Telefon("Banana", 20000);
         InstagramKonto instagramKonto = new InstagramKonto("VFA", 20000);
-
+        List<Samochod>samochody =new ArrayList<>();
+        samochody.add(samochod);
+        samochody.add(samochod1);
         List<Dom>domy =new ArrayList<>();
         domy.add(dom);
         domy.add(dom1);
@@ -23,7 +26,7 @@ public class Main2 {
         kolekcja.add(telefon1);
         kolekcja.add(telefon2);
         int wiek =11;
-        InfluencerEquipment influencer  = new InfluencerEquipment(domy, samochod, kolekcja, instagramKonto , wiek);
+        InfluencerEquipment influencer  = new InfluencerEquipment(domy, samochody, kolekcja, instagramKonto , wiek);
 
         System.out.print(influencer.opisInfluinsera() );
 
