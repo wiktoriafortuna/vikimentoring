@@ -33,4 +33,43 @@ public class InstagramKonto {
 
     }
 
+    public String getNazwaUzytkownika() {
+        return nazwaUzytkownika;
+    }
+
+    public void setNazwaUzytkownika(String nazwaUzytkownika) {
+        this.nazwaUzytkownika = nazwaUzytkownika;
+    }
+
+    public int getLiczbaObserwujacych() {
+        return liczbaObserwujacych;
+    }
+
+    public void setLiczbaObserwujacych(int liczbaObserwujacych) {
+        this.liczbaObserwujacych = liczbaObserwujacych;
+    }
+
+    public int getLiczbaPostow() {
+        return liczbaPostow;
+    }
+
+    public void setLiczbaPostow(int liczbaPostow) {
+        this.liczbaPostow = liczbaPostow;
+    }
+
+    public boolean isZweryfikowane() {
+        return zweryfikowane;
+    }
+
+    public void setZweryfikowane(boolean zweryfikowane) {
+        this.zweryfikowane = zweryfikowane;
+    }
+
+    public String getOpis() {
+        return opis;
+    }
+
+    public void setOpis(String opis) {
+        this.opis = opis;
+    }
 }

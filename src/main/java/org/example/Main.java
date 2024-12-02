@@ -6,12 +6,20 @@ import java.util.List;
 
 public class Main {
 
-    public static void main(String[] args) {
-        InstagramKonto Konto1 =  new InstagramKonto("Anna123");
-        InstagramKonto Konto2 = new InstagramKonto("JohnDoe",500);
-        InstagramKonto Konto3 = new InstagramKonto("TravelLife",2000, 50,  true, "Podróże i przygody!");
-        InstagramKonto Konto4 = new InstagramKonto("FashionQueen",10000, 150, true, " Moda i styl!");
+    //    public static void main(String[] args) {
+    class Simple {
+        public static void main(String[] args) {
+            System.out.print("Hello Viki");
 
+        }
+    }
+}
+
+//        InstagramKonto Konto1 =  new InstagramKonto("Anna123");
+//        InstagramKonto Konto2 = new InstagramKonto("JohnDoe",500);
+//        InstagramKonto Konto3 = new InstagramKonto("TravelLife",2000, 50,  true, "Podróże i przygody!");
+//        InstagramKonto Konto4 = new InstagramKonto("FashionQueen",10000, 150, true, " Moda i styl!");
+//
 
 //        Tancerz tancerz1 = new Tancerz("CWiki", "Poland");
 //        Tancerz tancerz2 = new Tancerz("ABartek", "Poland", 18);
@@ -19,7 +27,7 @@ public class Main {
 
 //        Tancerz[] tablica = new Tancerz[3];
 
-        List<InstagramKonto> kolekcja = new ArrayList<>();
+//        List<InstagramKonto> kolekcja = new ArrayList<>();
 //         kolekcah VS Tablica  =  kolecja ma funkcje a tablica ich nie
 //                Funkcje -   ( metoda to funkja )
 //                Tablice
@@ -32,10 +40,10 @@ public class Main {
 
 //        kolekcja.get(1);
 
-        kolekcja.add(Konto1);
-        kolekcja.add(Konto2);
-        kolekcja.add(Konto3);
-        kolekcja.add(Konto4);
+//        kolekcja.add(Konto1);
+//        kolekcja.add(Konto2);
+//        kolekcja.add(Konto3);
+//        kolekcja.add(Konto4);
 
 
 //        for (int i = 0; i < tablica.length; ++i) {
@@ -46,10 +54,10 @@ public class Main {
 //        System.out.println(contains);
 //
 //        System.out.println("Pierwsze wyswietlenie tancerzy");
-        System.out.println("Lista kont na Instagramie:" );
-        for(InstagramKonto i: kolekcja) {
-            System.out.println(i.opisKonta());
-        }
+//        System.out.printl("Lista kont na Instagramie:" );
+//        for(InstagramKonto i: kolekcja) {
+//            System.out.println(i.opisKonta());
+//        }
 
 //        kolekcja.
 
@@ -62,8 +70,8 @@ public class Main {
 
 
 
-    }
-}
+
+
 
 
 //        Scanner scanner = new Scanner(System.in);

@@ -3,25 +3,28 @@ package org.example;
 import java.util.List;
 
 public class InfluencerEquipment {
-    private Dom dom;
+    private List<Dom> domy;
     private Samochod samochod;
-    public  List<Telefon>kolekcja;
+    public List<Telefon> kolekcja;
     public InstagramKonto instagramKonto;
+    public int wiek;
 
-    InfluencerEquipment(Dom dom, Samochod samochod, List<Telefon> kolekcja, InstagramKonto instagramKonto) {
-        this.dom = dom;
+    InfluencerEquipment(List<Dom> domy, Samochod samochod, List<Telefon> kolekcja, InstagramKonto instagramKonto, int wiek) {
+        this.domy = domy;
         this.samochod = samochod;
-        this.kolekcja= kolekcja;
+        this.kolekcja = kolekcja;
         this.instagramKonto = instagramKonto;
+        this.wiek= wiek;
     }
 
-    public Dom getDom() {
-        return dom;
+    public List<Dom> getDomy() {
+        return domy;
     }
 
-    public void setDom(Dom dom) {
-        this.dom = dom;
+    public void setDomy(List<Dom> domy) {
+        this.domy = domy;
     }
+
 
     public Samochod getSamochod() {
         return samochod;
@@ -46,4 +49,29 @@ public class InfluencerEquipment {
     public void setInstagramKonto(InstagramKonto instagramKonto) {
         this.instagramKonto = instagramKonto;
     }
+
+    public String opisInfluinsera() {
+        return "mieszkam w domie o adresie: " + "\n" +
+                domy.get(0).getAdres() +
+                "\n" + domy.get(1).getAdres() +
+                "\n" + domy.get(2).getAdres() + "\n" +
+                " Powierzchnia: " + "\n" +
+                domy.get(0).getPowierzchnia() + "\n" +
+                domy.get(1).getPowierzchnia() + "\n" +
+                domy.get(2).getPowierzchnia() + "\n" +
+                " Posida samochod marki: " + samochod.getMarka() + "\n" +
+                " Cena go: " + samochod.getCena() + "\n" +
+                " Telefon modelu: " + "\n" +
+                kolekcja.get(0).getModel() + "\n" +
+                kolekcja.get(1).getModel() + "\n" +
+                " Konto na instagramie: " + instagramKonto.getNazwaUzytkownika() +
+                " Wiek : " + wiek + "\n";
+    }
+
+
+//    Domu (lokalizacja i wartość),
+//    Samochodzie (marka i cena),
+//    Telefonach w kolekcji (marka i cena każdego telefonu),
+//    Koncie na Instagramie (nazwa i liczba obserwujących).
+
 }
