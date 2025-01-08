@@ -6,11 +6,13 @@ import java.util.List;
 
 public class Main {
 
-    //    public static void main(String[] args) {
-    class Simple {
-        public static void main(String[] args) {
-            System.out.print("Hello Viki");
+    public static void main(String[] args) {
+        System.out.print("Viktoriia");
+        class Simple {
+            public static void main(String[] args) {
+                System.out.print("Hello Viki");
 
+            }
         }
     }
 }

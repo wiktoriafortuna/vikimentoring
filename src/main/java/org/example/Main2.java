@@ -5,6 +5,8 @@ import java.util.List;
 
 public class Main2 {
 
+
+
     public static void main(String[] args) {
         Dom dom = new Dom("Krakow", 10000, 4);
         Dom dom1 = new Dom("Hiszpania", 30000, 2);
