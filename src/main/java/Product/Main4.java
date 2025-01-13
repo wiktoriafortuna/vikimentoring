@@ -11,6 +11,7 @@ public class Main4 {
         products.add(product1);
         products.add(product2);
         System.out.println(product1);
+        System.out.println(product2);
         Shop shop = new Shop(products);
         boolean isOgorekAvailable= shop.isAvailable("ogorek");
         System.out.println(isOgorekAvailable);

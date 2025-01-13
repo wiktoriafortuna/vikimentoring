@@ -3,11 +3,14 @@ package org.school;
 import java.util.List;
 
 public class School {
-    List<Student> students;
+   public List<Student> students;
+   public String name;
 
-    School(List<Student>students){
+    School(List<Student>students, String name) {
         this.students = students;
+        this.name = name;
     }
+
     public boolean isEnrolled(String studentName){
         for(Student student : students){
             if(student.getName().equals(studentName)){
