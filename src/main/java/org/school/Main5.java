@@ -21,5 +21,8 @@ public class Main5 {
         System.out.println(isStudentAvailable);
         System.out.println(isStudentAvailable2);
         System.out.println(isStudentAvailable3);
+
+
+
     }
 }
