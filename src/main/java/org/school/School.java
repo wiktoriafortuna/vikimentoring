@@ -9,7 +9,7 @@ public class School {
 
     School(String name) {
         this.students = new ArrayList<>();
-        this.name = name;
+        this.name=name;
     }
 
     public boolean isEnrolled(String studentName){
