@@ -11,6 +11,7 @@ public class Main5 {
         school1.addStudent("Mieszko");
         school1.addStudent("Paweł");
 
+
         School school2 = new School( "SchoolkNr2");
         school2.addStudent("Michael");
         school2.addStudent("Wiktoria");
@@ -21,6 +22,16 @@ public class Main5 {
         System.out.println(isStudentAvailable);
         System.out.println(isStudentAvailable2);
         System.out.println(isStudentAvailable3);
+
+        school1.addTeacher("Dr Wiktoria",3000,"Matematyka");
+        school2.addTeacher("Dr hab Karol", 4000,"Angielski");
+
+        boolean isTeacherAvailable= school1.isAvailable("Wiktoria");
+        boolean isTeacherAvailable1= school1.isAvailable("Dr Wiktoria");
+
+        System.out.println(isTeacherAvailable);
+        System.out.println(isTeacherAvailable1);
+
 
 
 
