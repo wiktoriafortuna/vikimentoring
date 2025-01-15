@@ -37,6 +37,7 @@ public class School {
         Teacher teacher = new Teacher(name, salary, subject);
         this.teachers.add(teacher);
     }
+
     public boolean isAvailable(String name) {
         for (Teacher teacher : this.teachers) {
             String name1 = teacher.getName();
@@ -45,5 +46,15 @@ public class School {
             }
         }
         return false;
+    }
+
+    public Teacher findTeacherByName(String name) {
+        for (Teacher teacher : this.teachers) {
+            String name1 = teacher.getName();
+            if (name1.equalsIgnoreCase(name)) {
+                return teacher;
+            }
+        }
+        return null;
     }
 }
